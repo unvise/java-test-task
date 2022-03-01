@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.unvise.transportbook.javafx.controller.EditWindowController"
+            minHeight="500" minWidth="300"
+            maxHeight="500" maxWidth="300"
+            prefHeight="500" prefWidth="300">
+    <VBox AnchorPane.topAnchor="10" AnchorPane.bottomAnchor="0"
+          AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="10" spacing="10">
+        <HBox VBox.vgrow="ALWAYS" spacing="10">
+            <Text fx:id="brandText"
+                  style="-fx-alignment: center;"
+                  text="Brand">
+            </Text>
+            <TextField fx:id="brandTextField"/>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS" spacing="10">
+            <Text fx:id="modelText"
+                  style="-fx-alignment: center;"
+                  text="Model">
+            </Text>
+            <TextField fx:id="modelTextField"/>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS" spacing="10">
+            <Text fx:id="categoryText"
+                  style="-fx-alignment: center;"
+                  text="Category">
+            </Text>
+            <ChoiceBox fx:id="categoryChoiceBox"
+                       style="-fx-alignment: center;"
+                       AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="10"
+                       AnchorPane.leftAnchor="10" />
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS" spacing="10">
+            <Text fx:id="licensePlateText"
+                  style="-fx-alignment: center;"
+                  text="License Plate">
+            </Text>
+            <TextField fx:id="licensePlateTextField"/>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS" spacing="10">
+            <Text fx:id="typeText"
+                  style="-fx-alignment: center;"
+                  text="Type">
+            </Text>
+            <ChoiceBox fx:id="typeChoiceBox"
+                       style="-fx-alignment: center;"
+                       AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="10"
+                       AnchorPane.leftAnchor="10" />
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS" spacing="10">
+            <Text fx:id="prodYearText"
+                  style="-fx-alignment: center;"
+                  text="Prod Year">
+            </Text>
+            <TextField fx:id="prodYearTextField"/>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS" spacing="10">
+            <Text fx:id="trailerText"
+                  style="-fx-alignment: center;"
+                  text="Trailer">
+            </Text>
+            <TextField fx:id="withTrailerTextField"/>
+        </HBox>
+        <HBox VBox.vgrow="ALWAYS" spacing="10">
+            <Button fx:id="saveButton"
+                    text="Save" />
+        </HBox>
+    </VBox>
+</AnchorPane>

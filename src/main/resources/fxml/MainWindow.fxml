@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.unvise.transportbook.javafx.controller.MainWindowController"
+            prefHeight="500" prefWidth="1000"
+            minHeight="300" minWidth="1000"
+            maxHeight="Infinity" maxWidth="Infinity">
+    <VBox AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
+          AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" spacing="10">
+        <AnchorPane VBox.vgrow="ALWAYS">
+            <TableView fx:id="transportTable"
+                       AnchorPane.topAnchor="10" AnchorPane.bottomAnchor="0"
+                       AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+                <columns>
+                    <TableColumn fx:id="brandCol"
+                                 minWidth="100" prefWidth="100" style="-fx-alignment: center;"
+                                 text="BRAND"/>
+                    <TableColumn fx:id="modelCol"
+                                 minWidth="100" prefWidth="100" style="-fx-alignment: center;"
+                                 text="MODEL"/>
+                    <TableColumn fx:id="transportCategoryCol"
+                                 minWidth="70" prefWidth="70" style="-fx-alignment: center;"
+                                 text="CATEGORY"/>
+                    <TableColumn fx:id="licensePlateCol"
+                                 minWidth="100" prefWidth="100" style="-fx-alignment: center;"
+                                 text="LICENSE"/>
+                    <TableColumn fx:id="transportTypeCol"
+                                 minWidth="100" prefWidth="100" style="-fx-alignment: center;"
+                                 text="TYPE"/>
+                    <TableColumn fx:id="prodYearCol"
+                                 minWidth="150" prefWidth="150" style="-fx-alignment: center;"
+                                 text="PROD YEAR"/>
+                    <TableColumn fx:id="withTrailerCol"
+                                 minWidth="70" prefWidth="70" style="-fx-alignment: center;"
+                                 text="TRAILER"/>
+                </columns>
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+            </TableView>
+        </AnchorPane>
+        <AnchorPane maxHeight="50" VBox.vgrow="ALWAYS">
+            <HBox AnchorPane.topAnchor="10" AnchorPane.bottomAnchor="10"
+                  AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" spacing="10">
+                <VBox spacing="2">
+                    <Text text="Brand" style="-fx-alignment: center"/>
+                    <TextField fx:id="brandTextField"
+                               prefHeight="5" prefWidth="50"/>
+                </VBox>
+                <VBox spacing="2">
+                    <Text text="Model" style="-fx-alignment: center"/>
+                    <TextField fx:id="modelTextField"
+                               prefHeight="5" prefWidth="50"/>
+                </VBox>
+                <VBox spacing="2">
+                    <Text text="Category" style="-fx-alignment: center"/>
+                    <ChoiceBox fx:id="categoryChoiceBox"
+                               style="-fx-alignment: center;"
+                               AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="10"
+                               AnchorPane.leftAnchor="10" />
+                </VBox>
+                <Button fx:id="clearCategoryChoiceBoxButton"
+                        style="-fx-alignment: center;"
+                        prefHeight="50" prefWidth="70"
+                        text="Clear"/>
+                <VBox spacing="2">
+                    <Text text="License Plate" style="-fx-alignment: center"/>
+                    <TextField fx:id="licensePlateTextField"
+                               prefHeight="5" prefWidth="50"/>
+                </VBox>
+                <VBox spacing="2">
+                    <Text text="Type" style="-fx-alignment: center"/>
+                    <ChoiceBox fx:id="typeChoiceBox"
+                               style="-fx-alignment: center;"
+                               AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="10"
+                               AnchorPane.leftAnchor="10" />
+                </VBox>
+                <Button fx:id="clearTypeChoiceBoxButton"
+                        style="-fx-alignment: center;"
+                        prefHeight="50" prefWidth="70"
+                        text="Clear"/>
+                <VBox spacing="2">
+                    <Text text="Prod Year" style="-fx-alignment: center"/>
+                    <TextField fx:id="prodYearTextField"
+                            prefHeight="5" prefWidth="50"/>
+                </VBox>
+                <VBox spacing="2">
+                    <Text text="Trailer" style="-fx-alignment: center"/>
+                    <TextField fx:id="withTrailerTextField"
+                            prefHeight="5" prefWidth="50"/>
+                </VBox>
+                <Button fx:id="findByButton"
+                        style="-fx-alignment: center;"
+                        prefHeight="50" prefWidth="70"
+                        text="Find" />
+                <Button fx:id="refreshButton"
+                        style="-fx-alignment: center;"
+                        prefHeight="50" prefWidth="70"
+                        text="Refresh" />
+                <Button fx:id="addAndUpdateButton"
+                        style="-fx-alignment: center;"
+                        prefHeight="50" prefWidth="70"
+                        text="Add" />
+            </HBox>
+<!--            <HBox AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" spacing="10">-->
+<!--                <ChoiceBox fx:id="findByChoiceBox"-->
+<!--                           style="-fx-alignment: center;"-->
+<!--                           AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="10"-->
+<!--                           AnchorPane.leftAnchor="10" />-->
+
+<!--                <TextField fx:id="findByTextField"/>-->
+
+<!--                <Button fx:id="findByButton"-->
+<!--                        style="-fx-alignment: center;"-->
+<!--                        text="Find" />-->
+
+<!--                <Button fx:id="resetButton"-->
+<!--                        style="-fx-alignment: center;"-->
+<!--                        text="Reset" />-->
+
+<!--                <Button fx:id="addAndUpdateButton"-->
+<!--                        style="-fx-alignment: center;"-->
+<!--                        text="Add" />-->
+<!--            </HBox>-->
+        </AnchorPane>
+    </VBox>
+</AnchorPane>
